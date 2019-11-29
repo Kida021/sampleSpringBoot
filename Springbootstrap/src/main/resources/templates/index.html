@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SB</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Data table CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href = "/css/style4.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class= "active">
+            <div class="sidebar-header">
+                <h3>DB
+	                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+	                        <i class="fas fa-align-justify"></i>
+	                </button>
+                </h3>
+                <strong><button type="button" id="sidebarCollapse1" class="btn btn-primary">
+                        <i class="fas fa-align-justify"></i>
+                        
+                    </button></strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+		<div id="content">
+	 		<div class="container-fluid">
+				<div class = "row">
+					<div class ="col-12">
+						<div class="card">
+							<div class="card-header text-white bg-info mb-3">
+								<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			                        <i class="fas fa-list"></i>
+			                    </button>
+							    Corporate Action
+		                    </div>
+                    		<div class="card-body">
+			                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			                        <ul class="nav navbar-nav ml-auto">
+			                            <li class="nav-item active">
+			                                <a class="nav-link" id ="nav-cd" href="#nav-cashdiv-tab" >Cash Div</a>
+			                            </li>
+			                            <li class="nav-item">
+			                                <a class="nav-link" id="nav-page" href="#nav-profile-tab" >Page</a>
+			                            </li>
+			                        </ul>
+		                    	</div>
+		                    </div>
+						</div>
+                   	</div>
+                </div>
+   			</div>
+   			<div class="container-fluid">
+				<div class = "row">
+					<div class ="col-12">
+						<div class="card">
+							<div class="card-header text-white bg-info mb-3">
+								<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			                        <i class="fas fa-list"></i>
+			                    </button>
+							    BSRD
+		                    </div>
+                    		<div class="card-body">
+			                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+			                        <ul class="nav navbar-nav ml-auto">
+			                            <li class="nav-item active">
+			                                <a class="nav-link" href="#">Page</a>
+			                            </li>
+			                            <li class="nav-item">
+			                                <a class="nav-link" href="#">Page</a>
+			                            </li>
+			                        </ul>
+			                    </div>
+		                    </div>
+						</div>
+                   	</div>
+                </div>
+   			</div>
+   			<div class = "container-fluid" id ="hiddentab" >	
+   				<div class="row">
+   					<div class= "col">
+		   				<div class = "card">
+		   					<div class = "card-body">
+				 				<nav>
+									  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+									    <a class="nav-item nav-link active" id="nav-cashdiv-tab" data-toggle="tab" href="#nav-cashdiv" role="tab" aria-controls="nav-home" aria-selected="true"  >Cash Dividends</a>
+									    
+									    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" >Profile</a>
+									    
+									    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false" >Contact</a>
+									  </div>
+								</nav>
+								
+								<div class="tab-content" id="nav-tabContent">
+									  <div class="tab-pane fade show active" id="nav-cashdiv" role="tabpanel" aria-labelledby="nav-cashdiv-tab" >
+										  	<div class="col-12">
+								                <div class = "card">
+								                        <div class="card-header">
+								                            Record Date
+								                        </div>
+								                        <div class="card-body">
+								                            <table id="recordDate" class="table table-striped table-borderless" style="width:100%">
+								                                <thead>
+								                                    <tr>
+								                                        <th>Name</th>
+								                                        <th>Position</th>
+								                                        <th>Office</th>
+								                                        <th>Age</th>
+								                                        <th>Start date</th>
+								                                        <th>Salary</th>
+								                                    </tr>
+								                                </thead>
+								                                <tbody>
+								                                </tbody>
+								                                <tfoot>
+								                                    <tr>
+								                                        <th>Name</th>
+								                                        <th>Position</th>
+								                                        <th>Office</th>
+								                                        <th>Age</th>
+								                                        <th>Start date</th>
+								                                        <th>Salary</th>
+								                                    </tr>
+								                                </tfoot>
+								                            </table>
+								                        </div>
+								                    </div>
+								            </div>
+								            <div class="col-12">
+							                    <div class = "card">
+						                            <div class="card-header">
+						                                Payment Date
+						                            </div>
+						                            <div class="card-body">
+						                                <table id="paymentDate" class="table table-striped table-borderless" style="width:100%">
+						                                    <thead>
+						                                        <tr>
+						                                            <th>Name</th>
+						                                            <th>Position</th>
+						                                            <th>Office</th>
+						                                            <th>Age</th>
+						                                            <th>Start date</th>
+						                                            <th>Salary</th>
+						                                        </tr>
+						                                    </thead>
+						                                    <tbody>
+						                                    </tbody>
+						                                    <tfoot>
+						                                        <tr>
+						                                            <th>Name</th>
+						                                            <th>Position</th>
+						                                            <th>Office</th>
+						                                            <th>Age</th>
+						                                            <th>Start date</th>
+						                                            <th>Salary</th>
+						                                        </tr>
+						                                    </tfoot>
+						                                </table>
+						                            </div>
+						                        </div>
+							                </div>
+									  </div>
+									  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" >...</div>
+									  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" >...</div>
+								</div>
+		   					</div>
+				   		</div>
+	   				</div>
+   				</div>
+  			</div>
+		</div>
+    <!-- end of page content  -->
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Datatable script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript">
+	    
+/* 	    $(document).ready(function(){
+	    	$('#showhidden #nav-cd').click(function(){
+	    		$('#hiddentab').removeAttr("hidden");
+	    		$('#nav-cashdiv-tab').removeAttr("hidden");
+	    		$('#nav-cashdiv').removeAttr("hidden");
+	    		
+	    		console.log("ff");
+	    	})
+	    });
+	    $(document).ready(function(){
+	    	$('#showhidden #nav-page').click(function(){
+	    		$('#hiddentab').removeAttr("hidden");
+	    		$('#nav-profile-tab').removeAttr("hidden");
+	    		$('#nav-profile').removeAttr("hidden");
+	    		
+	    		console.log("ff");
+	    	})
+	    }); 
+	    
+	    $(document).ready(function(){
+	    	$('#showhidden #nav-page').on('click',function(){
+	    		$('#nav-profile-tab').toggleClass('active');
+	    	})
+	    });*/
+	    $(document).ready(function() {
+            $('#recordDate').DataTable();
+        } );
+	    
+	    $(document).ready(function() {
+            $('#paymentDate').DataTable();
+        } );
+	    $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+        $(document).ready(function () {
+            $('#sidebarCollapse1').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+    
+</body>
+
+</html>
